@@ -100,7 +100,6 @@ export const getMemoryConfig = () => {
             workingMemory: {
                 enabled: true,
 
-
                 // use: 'tool-call',
                 template: `
 # User Context
