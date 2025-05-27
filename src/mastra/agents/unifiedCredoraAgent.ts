@@ -1,8 +1,8 @@
 import { Agent } from '@mastra/core/agent';
 import { Memory } from '@mastra/memory';
-import { UpstashStore, UpstashVector } from '@mastra/upstash';
+import { UpstashStore } from '@mastra/upstash';
 import { google } from '@ai-sdk/google';
-import { fastembed } from "@mastra/fastembed";
+// import { fastembed } from "@mastra/fastembed";
 // Import all the Credora tools from the index file
 import {
     // User Context Tool (New)
@@ -77,11 +77,11 @@ const memoryStorage = new UpstashStore({
     token: getRedisCredentials().token,
 });
 
-// Vector database configuration using Upstash Vector
-const vectorStore = new UpstashVector({
-    url: getVectorCredentials().url,
-    token: getVectorCredentials().token,
-});
+// // Vector database configuration using Upstash Vector
+// const vectorStore = new UpstashVector({
+//     url: getVectorCredentials().url,
+//     token: getVectorCredentials().token,
+// });
 
 
 
@@ -89,8 +89,8 @@ export const getMemoryConfig = () => {
     // Ensure the Memory constructor is called exactly as documented.
     return new Memory({
         storage: memoryStorage, // Removed cast
-        vector: vectorStore,   // Removed cast
-        embedder: fastembed,
+        // vector: vectorStore,   // Removed cast
+        // embedder: fastembed,
         options: {
             lastMessages: 15,
             semanticRecall: {
