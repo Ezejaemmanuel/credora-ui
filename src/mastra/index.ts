@@ -1,4 +1,5 @@
 import { Mastra } from '@mastra/core/mastra';
+import { createLogger } from '@mastra/core/logger';
 // import {
 //   credoraNetwork,
 //   webResearchAgent,
@@ -22,7 +23,10 @@ export const mastra = new Mastra({
   networks: {
     // credoraNetwork
   },
-
+  logger: createLogger({
+    name: 'Mastra',
+    level: 'info',
+  }),
 
   // Make all tools available through this central object
 
