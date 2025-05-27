@@ -51,7 +51,7 @@ const CredoraLoanPoolExplained: React.FC = () => {
             <ul className="space-y-4 list-inside list-image-[url(/assets/bullet-neon-red.svg)] text-white/80">
                 <li>
                     <FileText className="inline-block w-5 h-5 mr-2 text-neonRed" />
-                    <strong>ERC-20 Token Functionality:</strong> Each loan pool contract also acts as an ERC-20 token. When lenders contribute funds (e.g., USDC) to the pool, they receive a proportional amount of these pool-specific tokens. These tokens represent their share in that particular loan and are unique to each pool (e.g., "Credora Loan Project Alpha", symbol "crALPHA").
+                    <strong>ERC-20 Token Functionality:</strong> Each loan pool contract also acts as an ERC-20 token. When lenders contribute funds (e.g., USDC) to the pool, they receive a proportional amount of these pool-specific tokens. These tokens represent their share in that particular loan and are unique to each pool (e.g., &quot;Credora Loan Project Alpha&quot;, symbol &quot;crALPHA&quot;).
                 </li>
                 <li>
                     <RefreshCw className="inline-block w-5 h-5 mr-2 text-neonRed" />
