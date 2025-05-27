@@ -93,10 +93,11 @@ export const getMemoryConfig = () => {
         // embedder: fastembed,
         options: {
             lastMessages: 15,
-            semanticRecall: {
-                topK: 7,
-                messageRange: 5
-            },
+            // semanticRecall: {
+            //     topK: 7,
+            //     messageRange: 5
+            // },
+            semanticRecall: false,
             workingMemory: {
                 enabled: true,
 
