@@ -19,7 +19,7 @@
     "@hookform/resolvers": "^3.9.0",
     "@mastra/core": "0.9.4",
     "@mastra/memory": "0.3.4",
-    "@mastra/fastembed": "0.0.3",
+    "@mastra/fastembed": "0.10.0",
     "@mastra/upstash": "0.3.4",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
