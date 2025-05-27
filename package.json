@@ -86,7 +86,6 @@
   },
   "devDependencies": {
     "@mastra/core": "^0.10.1",
-    "@mastra/mcp-docs-server": "^0.11.0",
     "@tanstack/react-query-devtools": "^5.76.1",
     "@types/node": "^22.15.18",
     "@types/react": "^19.1.4",

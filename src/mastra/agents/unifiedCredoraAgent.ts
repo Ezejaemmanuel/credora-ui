@@ -44,8 +44,6 @@ import {
     // Web Search Tool
     tavilySearchTool
 } from '../tools';
-import { MastraStorage } from '@mastra/core/storage';
-import { MastraVector } from '@mastra/core/vector';
 
 // Get Redis credentials for memory storage
 const getRedisCredentials = () => {
@@ -88,13 +86,10 @@ const vectorStore = new UpstashVector({
 
 
 export const getMemoryConfig = () => {
-    // Ensure the Memory constructor is called exactly as documented,
-    // assuming UpstashStore and UpstashVector *should* be compatible
-    // if versions were aligned. The structural errors (missing properties)
-    // indicate a deeper type mismatch from library versions.
+    // Ensure the Memory constructor is called exactly as documented.
     return new Memory({
-        storage: memoryStorage , // Cast to expected type
-        vector: vectorStore , // Cast through unknown to expected type
+        storage: memoryStorage, // Removed cast
+        vector: vectorStore,   // Removed cast
         embedder: fastembed,
         options: {
             lastMessages: 15,

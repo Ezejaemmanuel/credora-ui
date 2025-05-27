@@ -33,6 +33,6 @@ export async function POST(req: NextRequest) {
   // Stream the response using the agent with the determined resourceId and threadId
   const result = await agent.stream(messages, { threadId, resourceId });
 
-  // Return the result as a data stream response
+  // Return the result as a data stream respowhnse
   return result.toDataStreamResponse();
 }
